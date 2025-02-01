@@ -3,6 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./src/**/*.tsx"],
+  darkMode: ["class"],
   theme: {
     extend: {
       fontFamily: {
@@ -10,5 +11,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  
+  plugins: [
+  ],
+
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 } satisfies Config;
