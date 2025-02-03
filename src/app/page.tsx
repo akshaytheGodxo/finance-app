@@ -1,11 +1,9 @@
-import Link from "next/link";
-
-import { LatestPost } from "~/app/_components/post";
 import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import Navbar from "./_components/global/navbar";
+import { DotBackgroundDemo } from "./_components/ui/DotBackground";
+import { FlipWordsDemo } from "./_components/global/hero-section";
 export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
   const session = await auth();
 
   if (session?.user) {
@@ -16,6 +14,10 @@ export default async function Home() {
     <HydrateClient>
       <main className="" >
         <Navbar />
+
+        {/* Main Body */}
+        <DotBackgroundDemo />
+        <FlipWordsDemo />
       </main>
     </HydrateClient>
   );
