@@ -1,8 +1,7 @@
 import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
-import Navbar from "./_components/global/navbar";
-import { DotBackgroundDemo } from "./_components/ui/DotBackground";
-import { FlipWordsDemo } from "./_components/global/hero-section";
+import Navbar from "./_components/ui/navbar";
+import Header from "./_components/ui/hero";
 export default async function Home() {
   const session = await auth();
 
@@ -12,12 +11,9 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <main className="" >
+      <main className="">
         <Navbar />
-
-        {/* Main Body */}
-        <DotBackgroundDemo />
-        <FlipWordsDemo />
+        <Header />
       </main>
     </HydrateClient>
   );
