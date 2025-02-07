@@ -9,7 +9,7 @@ const LogoScroll = () => {
             
 
             {/* tab component */}
-            <div className="w-[67.5rem] h-[32rem] bg-[#FDF5DF] rounded-2xl mt-24 ml-auto mr-auto flex">
+            <div className="w-[67.5rem] h-[32rem] bg-[#FDF5DF] rounded-2xl mt-32 ml-auto mr-auto flex">
                 <img src={"/dashboard.svg"} className="mt-auto"/>
             </div>
         </div>

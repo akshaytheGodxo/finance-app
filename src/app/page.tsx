@@ -4,7 +4,7 @@ import Navbar from "./_components/ui/navbar";
 import Header from "./_components/ui/hero";
 import LogoScroll from "./_components/ui/hero2";
 import InfoCards from "./_components/ui/hero3";
-
+import ReviewSection from "./_components/ui/hero4";
 export default async function Home() {
   const session = await auth();
 
@@ -19,6 +19,7 @@ export default async function Home() {
         <Header />
         <LogoScroll />
         <InfoCards />
+        <ReviewSection />
       </main>
     </HydrateClient>
   );
