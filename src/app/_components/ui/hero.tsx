@@ -3,7 +3,7 @@ import { PinContainer } from "./3d-pin";
 import Donut from "./donut";
 const Header = () => {
     return (
-        <div className="bg-[#2b2b2b] h-[75vh] flex flex-row">
+        <div className="bg-[#2b2b2b] h-[75vh] flex flex-row pb-[39rem] ">
             <div className="flex flex-col">
             {/* main template */}
             <div className="ml-24 mt-20 mr-4">
@@ -40,6 +40,10 @@ const Header = () => {
                     </div>
                 </PinContainer>
             </div>
+
+
+            {/* divider */}
+            
         </div>
     );
 }
