@@ -1,8 +1,8 @@
-
+import StockChart from "../_components/ui/StockChart";
 const page = () => {
     return (
         <div>
-                something
+            <StockChart symbol="goog"/>
         </div>
     )
 }

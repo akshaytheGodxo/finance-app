@@ -7,7 +7,7 @@ import {
 
 const AccordionSection = () => {
     return (
-        <div className="bg-[#2b2b2b] flex flex-col items-center justify-center p-4">
+        <div className="bg-[#2b2b2b] flex flex-col items-center justify-center p-4 ">
             <div className="w-full max-w-[74rem] h-px bg-white opacity-20 mb-8" />
             <h2 className="font-poppins font-semibold text-4xl text-white text-center mb-6 text-4xl">FAQ's</h2>
             <div className="w-full max-w-lg">
