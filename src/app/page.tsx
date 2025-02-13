@@ -7,7 +7,7 @@ import InfoCards from "./_components/ui/hero3";
 import ReviewSection from "./_components/ui/hero4";
 import AccordionSection from "./_components/ui/hero5";
 import Footer from "./_components/globals/footer";
-
+import { SidebarProvider, SidebarTrigger } from "./_components/ui/sidebar";
 export default async function Home() {
   const session = await auth();
 
@@ -17,6 +17,8 @@ export default async function Home() {
   console.log(session?.user);
   return (
     <HydrateClient>
+     
+
       <main className="" suppressHydrationWarning={true}>
         <Navbar />
         <Header />
