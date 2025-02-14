@@ -1,5 +1,5 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
-
+import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen } from "lucide-react"
+import { auth } from "~/server/auth"
 import {
   Sidebar,
   SidebarContent,
@@ -20,28 +20,30 @@ const items = [
     icon: Home,
   },
   {
-    title: "Inbox",
+    title: "Calculator",
     url: "#",
-    icon: Inbox,
+    icon: Calculator,
   },
   {
-    title: "Calendar",
+    title: "Trends",
     url: "#",
-    icon: Calendar,
+    icon: ChartArea,
   },
   {
-    title: "Search",
+    title: "Take Quiz",
     url: "#",
     icon: Search,
   },
   {
-    title: "Settings",
+    title: "News",
     url: "#",
-    icon: Settings,
+    icon: Newspaper,
   },
 ]
 
-export default function AppSidebar() {
+export default async function AppSidebar() {
+  const session = await auth();
+  const userName = session?.user.name;
   return (
     <div className="">
     <Sidebar>
@@ -63,8 +65,16 @@ export default function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        <SidebarGroup className="mt-auto bg-[#333333]">
+
+          <SidebarGroupLabel className=" flex flex-row gap-4">
+            <label><UserRoundPen color="white"/></label>
+            <h2 className="text-white font-poppins inline">{userName?.toUpperCase()}</h2></SidebarGroupLabel>
+        </SidebarGroup>
       </SidebarContent>
     </Sidebar>
+  
+
     </div>
   )
 }
