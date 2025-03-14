@@ -1,4 +1,4 @@
-import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen } from "lucide-react"
+import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad } from "lucide-react"
 import { auth } from "~/server/auth"
 import {
   Sidebar,
@@ -39,6 +39,11 @@ const items = [
     url: "#",
     icon: Newspaper,
   },
+  {
+    title: "Play",
+    url: "/games",
+    icon: Gamepad,
+  }
 ]
 
 export default async function AppSidebar() {
