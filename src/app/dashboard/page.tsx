@@ -54,7 +54,7 @@ export default async function AppSidebar() {
     <Sidebar>
       <SidebarContent className="bg-[#2b2b2b]">
         <SidebarGroup className="mt-2 ">
-          <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Wallet</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Pookie Wallet</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu className="text-white font-poppins">
               {items.map((item) => (

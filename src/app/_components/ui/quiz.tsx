@@ -71,7 +71,7 @@ const Quiz: React.FC<QuizProps> = ({ name }) => {
 	};
 
 	return (
-		<div className='max-w-2xl mx-auto mt-10 p-5 bg-gray-800 text-white rounded-lg shadow-lg'>
+		<div className='max-w-2xl mx-auto mt-10 p-5 bg-[#333535] text-white rounded-lg shadow-lg'>
 			<div>
 				{!showResults ? (
 					<div className='p-4'>

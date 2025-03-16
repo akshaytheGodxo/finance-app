@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-[#2b2b2b] h-auto py-8 px-4 flex flex-col md:px-16 font-poppins">
       <div className="w-full h-px bg-white mt-8 opacity-20" />
 
-      <h4 className="font-poppins text-white mt-8 text-3xl">Wallet</h4>
+      <h4 className="font-poppins text-white mt-8 text-3xl">Pookie Wallet</h4>
       <div className="flex flex-row">
         <div className="mt-4">
           <ul className="space-x-6 flex flex-row mt-14 text-lg">
@@ -16,7 +16,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href={"/#"} className="text-white">
-                Wallet 2025
+              Pookie Wallet 2025
               </Link>
             </li>
             <li>

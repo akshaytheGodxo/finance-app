@@ -17,8 +17,8 @@ export default function QuizGame() {
 				transition={{ duration: 0.5 }}
 				className="text-center mb-6"
 			>
-				<h1 className='text-4xl font-bold text-green-400'>
-                    Wallet Quiz
+				<h1 className='text-4xl font-bold text-white font-poppins'>
+				Pookie  Quiz
                 </h1>
 				<h3 className='text-lg text-gray-300'>Quiz App</h3>
 			</motion.div>
@@ -52,7 +52,7 @@ export default function QuizGame() {
 					</div>
 					<Button
 						onClick={() => setQuizStarted(true)}
-						className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-all"
+						className="w-full bg-[#BFAFF2] hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-all"
 						disabled={!name.trim()}
 					>
 						Start Quiz
