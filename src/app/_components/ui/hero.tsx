@@ -40,7 +40,7 @@ const Header = () => {
         <PinContainer title="Users who tried the bot" href="/smthing.com" className="bg-[#333333]">
           <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem] font-poppins">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
-              Wallet Bot
+            Pookie Wallet Bot
             </h3>
             <div className="text-base !m-0 !p-0 font-normal">
               <span className="text-slate-500">

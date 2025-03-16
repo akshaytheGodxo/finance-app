@@ -1,4 +1,4 @@
-import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen } from "lucide-react"
+import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad } from "lucide-react"
 import { auth } from "~/server/auth"
 import {
   Sidebar,
@@ -39,6 +39,11 @@ const items = [
     url: "#",
     icon: Newspaper,
   },
+  {
+    title: "Play",
+    url: "/games",
+    icon: Gamepad,
+  }
 ]
 
 export default async function AppSidebar() {
@@ -49,7 +54,7 @@ export default async function AppSidebar() {
     <Sidebar>
       <SidebarContent className="bg-[#2b2b2b]">
         <SidebarGroup className="mt-2 ">
-          <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Wallet</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Pookie Wallet</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu className="text-white font-poppins">
               {items.map((item) => (
