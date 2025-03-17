@@ -52,7 +52,7 @@ export default function QuizGame() {
 					</div>
 					<Button
 						onClick={() => setQuizStarted(true)}
-						className="w-full bg-[#BFAFF2] hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-all"
+						className="w-full bg-[#BFAFF2] hover:bg-[#8b74d7] text-white font-semibold py-2 px-4 rounded-lg transition-all"
 						disabled={!name.trim()}
 					>
 						Start Quiz
