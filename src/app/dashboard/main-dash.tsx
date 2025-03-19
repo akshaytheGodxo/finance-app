@@ -1,6 +1,9 @@
+
+import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { auth } from "~/server/auth";
 import StockChart from "../_components/ui/StockCharts";
-import { Card, CardHeader, CardTitle, CardContent } from "~/components/ui/card";
+
+
 
 export default async function MainDashboard() {
   const session = await auth();
@@ -27,6 +30,8 @@ export default async function MainDashboard() {
           <StockChart symbol="AAPL" />
         </CardContent>
       </Card>
+      {/* </div>
+      </div> */}
 
       {/* Quick Stats Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -62,9 +67,15 @@ export default async function MainDashboard() {
             <p>NASDAQ: <span className="text-green-400">+2.1%</span></p>
           </CardContent>
         </Card>
-      </div>
+        </div>
 
-      {/* Stock News (Demo) */}
+      
+      
+
+      
+
+        {/* Stock News (Demo) */}
+        <div>
       <Card className="bg-[#333333] text-white shadow-xl shadow-black/30">
         <CardHeader>
           <CardTitle>📢 Latest Stock News</CardTitle>
@@ -86,6 +97,11 @@ export default async function MainDashboard() {
           </ul>
         </CardContent>
       </Card>
-    </div>
+      </div>
+      </div>
+    
   );
 }
+
+
+
