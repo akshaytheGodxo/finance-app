@@ -19,31 +19,28 @@ const items = [
     url: "#",
     icon: Home,
   },
-  {
-    title: "Calculator",
-    url: "#",
-    icon: Calculator,
-  },
+  
   {
     title: "Trends",
     url: "#",
     icon: ChartArea,
   },
-  {
-    title: "Take Quiz",
-    url: "#",
-    icon: Search,
-  },
+
   {
     title: "News",
     url: "#",
     icon: Newspaper,
   },
   {
-    title: "Play",
+    title: "Take Quiz",
     url: "/games",
     icon: Gamepad,
   }
+  ,{
+    title: "Calculate Returns",
+    url: "#",
+    icon: Calculator,
+  },
 ]
 
 export default async function AppSidebar() {
