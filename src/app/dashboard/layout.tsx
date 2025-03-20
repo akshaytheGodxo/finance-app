@@ -3,9 +3,9 @@ import AppSidebar from "./page"
 import MainDashboard from "./main-dash"
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <SidebarProvider className="bg-[#2b2b2b]">
+    <SidebarProvider className="bg-[#0f172a]">
       <AppSidebar />
-      <main className="">
+      <main className="w-full">
         <MainDashboard />
         {children}
       </main>

@@ -8,18 +8,27 @@ import StockChart from "../_components/ui/StockCharts";
 export default async function MainDashboard() {
   const session = await auth();
   const userName = session?.user.name;
+  
 
   return (
-    <div className="p-6 space-y-6 bg-[#2b2b2b] min-h-screen">
-      {/* Welcome Card */}
-      <Card className="bg-[#333333] text-white shadow-xl shadow-black/30">
-        <CardHeader>
-          <CardTitle className="text-2xl font-bold">Welcome, {userName} 👋</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-white/80">Stay updated with the latest stock trends and market insights.</p>
-        </CardContent>
-      </Card>
+    <div className="p-6 space-y-6 bg-[#0f172a] min-h-screen w-[100%]">
+
+<Card  className="shadow-lg shadow-blue-500/20 bg-gray-[900] border-none transition-all duration-300 
+             hover:shadow-blue-400/50">
+    <CardHeader>
+      <CardTitle className="text-3xl font-extrabold text-white/90 tracking-wide">
+        Welcome, {userName} 
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      <p className="text-blue-200/80 text-lg font-light italic">
+        Stay updated with the latest stock trends and market insights.
+      </p>
+    </CardContent>
+  </Card>
+
+
+
 
       {/* Stock Chart */}
       <Card className="bg-[#333333] text-white shadow-xl shadow-black/30">
