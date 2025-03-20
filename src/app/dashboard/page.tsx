@@ -49,7 +49,7 @@ export default async function AppSidebar() {
   return (
     <div className="">
     <Sidebar>
-      <SidebarContent className="bg-[#2b2b2b]">
+      <SidebarContent className="bg-[#1a1a1a]">
         <SidebarGroup className="mt-2 ">
           <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Pookie Wallet</SidebarGroupLabel>
           <SidebarGroupContent>
@@ -67,7 +67,7 @@ export default async function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <SidebarGroup className="mt-auto bg-[#333333]">
+        <SidebarGroup className="mt-auto bg-[#121212]">
 
           <SidebarGroupLabel className=" flex flex-row gap-4">
             <label><UserRoundPen color="white"/></label>

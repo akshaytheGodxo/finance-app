@@ -37,7 +37,7 @@ const Header = () => {
 
       {/* Chart Section */}
       <div className="mt-16 lg:mt-0 lg:ml-16 flex justify-center lg:w-1/2">
-        <PinContainer title="Users who tried the bot" href="/smthing.com" className="bg-[#333333]">
+        <PinContainer title="Users who tried the bot" href="/smthing.com" className="bg-[#121212]">
           <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem] font-poppins">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
             Pookie Wallet Bot
