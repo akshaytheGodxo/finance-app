@@ -2,7 +2,7 @@ import { ExpandableCardDemo } from "./review-cards";
 
 const ReviewSection = () => {
   return (
-    <div className="bg-[#2b2b2b] py-16 px-6 flex flex-col items-center">
+    <div className="bg-[#0f172a] py-16 px-6 flex flex-col items-center">
       <div className="w-full max-w-[74rem] h-px bg-white opacity-20 mb-8" />
       
       <h2 className="text-white font-poppins text-4xl font-semibold text-center">

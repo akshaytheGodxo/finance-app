@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Button } from "~/components/ui/button"
 import { ChevronDown, TrendingUp, TrendingDown } from "lucide-react"
-
+import { Input } from "../_components/globals/input";
+import { Search } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "~/app/_components/ui/dropdown-menu"
-import StockCard from "../_components/ui/stock-card";
 import ImprovedStockCard from "../_components/ui/stock-card";
 interface CompanyData {
   name: string
@@ -109,8 +109,9 @@ export default async function MainDashboard() {
   return (
     <div className="p-6 space-y-6 bg-[#1a1a1a] min-h-screen w-[100%]">
 
-<Card  className="shadow-lg shadow-blue-500/20 bg-[#121212] border-none transition-all duration-300 
-             hover:shadow-blue-400/50 w-full max-w-3xl">
+<div className="flex flex-col gap-4">
+<Card  className="shadow-lg  bg-[#121212] border-none transition-all duration-300 
+              w-full ">
     <CardHeader>
       <CardTitle className="text-3xl font-extrabold text-white/90 tracking-wide">
         Welcome, Akshay
@@ -124,10 +125,11 @@ export default async function MainDashboard() {
 
     </CardContent>
   </Card>
-
-
-
-
+    <div className="flex flex-row gap-2">
+    <Input  className="border-none shadow-lg bg-[#121212] my-auto text-white" placeholder="Search for your company"/>
+    <Button className="bg-[#121212]"><Search></Search></Button>
+    </div>
+    </div>
       {/* Stock Chart */}
 
     <div className="flex flex-row space-x-4">

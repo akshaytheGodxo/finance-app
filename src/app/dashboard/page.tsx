@@ -1,4 +1,4 @@
-import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad } from "lucide-react"
+import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad, Star } from "lucide-react"
 import { auth } from "~/server/auth"
 import {
   Sidebar,
@@ -16,19 +16,19 @@ import {
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/dashboard",
     icon: Home,
   },
   
   {
     title: "Trends",
-    url: "#",
+    url: "/trends",
     icon: ChartArea,
   },
 
   {
     title: "News",
-    url: "#",
+    url: "/news",
     icon: Newspaper,
   },
   {
@@ -38,9 +38,14 @@ const items = [
   }
   ,{
     title: "Calculate Returns",
-    url: "#",
+    url: "returns-calculator",
     icon: Calculator,
   },
+  {
+    title: "Feedback",
+    url: "/feedback",
+    icon: Star
+  }
 ]
 
 export default async function AppSidebar() {
