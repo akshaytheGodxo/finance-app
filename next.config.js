@@ -7,7 +7,12 @@ import "./src/env.js";
 /** @type {import("next").NextConfig} */
 const config = {
     images: {
-        domains: ['images.unsplash.com', 'assets.aceternity.com'],
+        remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: '**', // allow all HTTPS images (use with caution in production)
+            },
+          ],
     },
     eslint: {
         ignoreDuringBuilds : true

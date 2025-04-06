@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#2b2b2b] min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-24 py-8">
+    <div className="bg-[#0f172a] min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-24 py-8">
       
       {/* Text Section */}
       <div className="flex flex-col text-center lg:text-left lg:w-1/2">
@@ -37,7 +37,7 @@ const Header = () => {
 
       {/* Chart Section */}
       <div className="mt-16 lg:mt-0 lg:ml-16 flex justify-center lg:w-1/2">
-        <PinContainer title="Users who tried the bot" href="/smthing.com" className="bg-[#333333]">
+        <PinContainer title="Users who tried the bot" href="/smthing.com" className="bg-[#121212]">
           <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem] font-poppins">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
             Pookie Wallet Bot

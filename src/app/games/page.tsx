@@ -10,7 +10,7 @@ export default function QuizGame() {
 	const [name, setName] = useState('');
 
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center bg-[#2b2b2b] text-white p-6">
+		<div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a ] text-white p-6">
 			<motion.div 
 				initial={{ opacity: 0, y: -50 }} 
 				animate={{ opacity: 1, y: 0 }} 
@@ -36,7 +36,7 @@ export default function QuizGame() {
 					initial={{ opacity: 0, y: 50 }} 
 					animate={{ opacity: 1, y: 0 }} 
 					transition={{ duration: 0.5 }}
-					className="w-full max-w-md bg-[#33333] p-6 rounded-lg shadow-lg"
+					className="w-full max-w-md bg-[#121212] p-6 rounded-lg shadow-lg"
 				>
 					<div className="mb-4">
 						<label htmlFor="nameInput" className="block text-sm font-medium text-gray-300 mb-2">

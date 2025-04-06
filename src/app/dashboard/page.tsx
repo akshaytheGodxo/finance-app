@@ -1,4 +1,4 @@
-import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad } from "lucide-react"
+import { Calculator, Calendar, ChartArea, Home, Inbox, Newspaper, Search, Settings, UserRoundPen, Gamepad, Star } from "lucide-react"
 import { auth } from "~/server/auth"
 import {
   Sidebar,
@@ -16,33 +16,35 @@ import {
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/dashboard",
     icon: Home,
   },
-  {
-    title: "Calculator",
-    url: "#",
-    icon: Calculator,
-  },
+  
   {
     title: "Trends",
-    url: "#",
+    url: "/trends",
     icon: ChartArea,
   },
-  {
-    title: "Take Quiz",
-    url: "#",
-    icon: Search,
-  },
+
   {
     title: "News",
-    url: "#",
+    url: "/news",
     icon: Newspaper,
   },
   {
-    title: "Play",
+    title: "Take Quiz",
     url: "/games",
     icon: Gamepad,
+  }
+  ,{
+    title: "Calculate Returns",
+    url: "returns-calculator",
+    icon: Calculator,
+  },
+  {
+    title: "Feedback",
+    url: "/feedback",
+    icon: Star
   }
 ]
 
@@ -52,7 +54,7 @@ export default async function AppSidebar() {
   return (
     <div className="">
     <Sidebar>
-      <SidebarContent className="bg-[#2b2b2b]">
+      <SidebarContent className="bg-[#1a1a1a]">
         <SidebarGroup className="mt-2 ">
           <SidebarGroupLabel className="text-white font-poppins text-2xl mb-8">Pookie Wallet</SidebarGroupLabel>
           <SidebarGroupContent>
@@ -70,7 +72,7 @@ export default async function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <SidebarGroup className="mt-auto bg-[#333333]">
+        <SidebarGroup className="mt-auto bg-[#121212]">
 
           <SidebarGroupLabel className=" flex flex-row gap-4">
             <label><UserRoundPen color="white"/></label>

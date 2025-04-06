@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#2b2b2b] h-auto py-8 px-4 flex flex-col md:px-16 font-poppins">
+    <div className="bg-[#0f172a] h-auto py-8 px-4 flex flex-col md:px-16 font-poppins">
       <div className="w-full h-px bg-white mt-8 opacity-20" />
 
       <h4 className="font-poppins text-white mt-8 text-3xl">Pookie Wallet</h4>

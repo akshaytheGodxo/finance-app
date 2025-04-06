@@ -29,7 +29,7 @@ const StockChart = ({ symbol }: { symbol: string }) => {
   }, [symbol]);
 
   return (
-    <Card className="p-2 bg-[#333333] border-none md:ml-6">
+    <Card className="p-2 bg-[#121212] border-none md:ml-6">
       <CardHeader>
         <CardTitle className="text-white font-poppins">{symbol} Stock Chart</CardTitle>
       </CardHeader>
