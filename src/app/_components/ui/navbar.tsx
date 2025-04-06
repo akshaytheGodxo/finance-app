@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#0f172a] w-full h-24 flex items-center border-b border-black px-4 md:px-12">
+        <nav className="bg-[#1a1a1a] w-full h-24 flex items-center border-b border-black px-4 md:px-12">
             <span className="font-poppins text-white text-3xl">
                 <h3>Pookie Wallet</h3>
             </span>
@@ -27,9 +27,12 @@ const Navbar = () => {
 
 
                 <div className="ml-auto hidden md:flex items-center space-x-6">
-                    <button className="w-17 h-8 text-white font-poppins">
-                    <Link href="/signup">Sign up</Link>
-                </button>
+
+
+                    {(session?.user && status == "authenticated") ? <button className="w-17 h-8 text-white font-poppins">
+                    <Link href="/signup">Sign out</Link>
+                </button> : <button className="w-17 h-8 text-white font-poppins">
+                    <Link href="/signup">Sign up</Link></button> }
 
                 {(session?.user  && status == "authenticated") ? (
                     <Link href="/dashboard">

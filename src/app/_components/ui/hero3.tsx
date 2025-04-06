@@ -24,7 +24,7 @@ export const projects = [
   
 const InfoCards = () => {
     return (
-<div className="bg-[#0f172a] w-full flex flex-col items-center px-4 py-8">
+<div className="bg-[#1a1a1a] w-full flex flex-col items-center px-4 py-8">
   <div className="w-full max-w-[74rem] h-px bg-white opacity-20" />
 
   <div className="text-center mt-[3rem] mb-[2rem]">

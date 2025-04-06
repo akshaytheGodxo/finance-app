@@ -128,7 +128,7 @@ export function ExpandableCardDemo() {
               <div className="p-4">
                 <motion.h3
                   layoutId={`title-${active.title}-${id}`}
-                  className="font-bold text-neutral-700 dark:text-neutral-200 text-lg"
+                  className="font-bold text-white dark:text-neutral-200 text-lg"
                 >
                   {active.title}
                 </motion.h3>
@@ -168,7 +168,7 @@ export function ExpandableCardDemo() {
                 />
               </motion.div>
               <div>
-                <motion.h3 className="font-medium text-neutral-800 dark:text-neutral-200">
+                <motion.h3 className="font-medium text-white dark:text-neutral-200">
                   {card.title}
                 </motion.h3>
                 <motion.p className="text-neutral-600 dark:text-neutral-400 text-sm">

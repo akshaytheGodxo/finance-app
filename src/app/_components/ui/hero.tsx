@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#0f172a] min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-24 py-8">
+    <div className="bg-[#1a1a1a] min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-24 py-8">
       
       {/* Text Section */}
       <div className="flex flex-col text-center lg:text-left lg:w-1/2">

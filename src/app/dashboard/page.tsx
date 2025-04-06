@@ -19,12 +19,7 @@ const items = [
     url: "/dashboard",
     icon: Home,
   },
-  
-  {
-    title: "Trends",
-    url: "/trends",
-    icon: ChartArea,
-  },
+
 
   {
     title: "News",
@@ -41,11 +36,7 @@ const items = [
     url: "returns-calculator",
     icon: Calculator,
   },
-  {
-    title: "Feedback",
-    url: "/feedback",
-    icon: Star
-  }
+
 ]
 
 export default async function AppSidebar() {

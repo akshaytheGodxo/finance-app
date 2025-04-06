@@ -10,7 +10,7 @@ export default function QuizGame() {
 	const [name, setName] = useState('');
 
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a ] text-white p-6">
+		<div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white p-6">
 			<motion.div 
 				initial={{ opacity: 0, y: -50 }} 
 				animate={{ opacity: 1, y: 0 }} 
